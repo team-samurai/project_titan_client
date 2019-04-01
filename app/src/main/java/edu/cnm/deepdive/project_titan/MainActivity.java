@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import edu.cnm.deepdive.project_titan.fragments.Fragment1;
 import edu.cnm.deepdive.project_titan.fragments.Fragment2;
+import edu.cnm.deepdive.project_titan.fragments.Fragment3;
 
 public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
@@ -88,6 +89,10 @@ public class MainActivity extends AppCompatActivity
         break;
       case R.id.fragment_2:
         loadFragment(new Fragment2(), R.id.fragment_container, "fragment2",
+            null);// this refers to the method at the very bottom
+        break;
+      case R.id.fragment_3:
+        loadFragment(new Fragment3(), R.id.fragment_container, "fragment3",
             null);// this refers to the method at the very bottom
         break;
     }
